@@ -9,6 +9,7 @@ import UIKit
 
 class ReportViewController: UIViewController {
 
+    @IBOutlet weak var ComponentsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,4 +17,11 @@ class ReportViewController: UIViewController {
     }
     
 
+}
+func applyShadowOnReportView(_ view: UIView) {
+    view.layer.cornerRadius = 8
+    view.layer.shadowColor = UIColor.darkGray.cgColor
+    view.layer.shadowOpacity = 0.5
+    view.layer.shadowOffset = .zero
+    view.layer.shadowRadius = 2
 }

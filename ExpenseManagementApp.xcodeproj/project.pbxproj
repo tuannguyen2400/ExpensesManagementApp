@@ -17,6 +17,8 @@
 		222F51C329E935D8002C6896 /* ExpenseManagementAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51C229E935D8002C6896 /* ExpenseManagementAppUITests.swift */; };
 		222F51C529E935D8002C6896 /* ExpenseManagementAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51C429E935D8002C6896 /* ExpenseManagementAppUITestsLaunchTests.swift */; };
 		222F51D229ECFB7B002C6896 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51D129ECFB7B002C6896 /* ReportViewController.swift */; };
+		222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51D329ED29C6002C6896 /* SettingsViewController.swift */; };
+		222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		222F51C229E935D8002C6896 /* ExpenseManagementAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManagementAppUITests.swift; sourceTree = "<group>"; };
 		222F51C429E935D8002C6896 /* ExpenseManagementAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManagementAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		222F51D129ECFB7B002C6896 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		222F51D329ED29C6002C6896 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 		222F519529E935D7002C6896 = {
 			isa = PBXGroup;
 			children = (
+				222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */,
 				222F51D129ECFB7B002C6896 /* ReportViewController.swift */,
+				222F51D329ED29C6002C6896 /* SettingsViewController.swift */,
 				222F51A029E935D7002C6896 /* ExpenseManagementApp */,
 				222F51B729E935D8002C6896 /* ExpenseManagementAppTests */,
 				222F51C129E935D8002C6896 /* ExpenseManagementAppUITests */,
@@ -264,6 +270,8 @@
 				222F51D229ECFB7B002C6896 /* ReportViewController.swift in Sources */,
 				222F51A629E935D7002C6896 /* ViewController.swift in Sources */,
 				222F51A229E935D7002C6896 /* AppDelegate.swift in Sources */,
+				222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */,
+				222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */,
 				222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

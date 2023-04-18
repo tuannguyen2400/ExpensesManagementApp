@@ -19,6 +19,7 @@
 		222F51D229ECFB7B002C6896 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51D129ECFB7B002C6896 /* ReportViewController.swift */; };
 		222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51D329ED29C6002C6896 /* SettingsViewController.swift */; };
 		222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */; };
+		222F51E029EE57F5002C6896 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51DF29EE57F5002C6896 /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		222F51D129ECFB7B002C6896 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		222F51D329ED29C6002C6896 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		222F51DF29EE57F5002C6896 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +87,8 @@
 		222F519529E935D7002C6896 = {
 			isa = PBXGroup;
 			children = (
-				222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */,
-				222F51D129ECFB7B002C6896 /* ReportViewController.swift */,
-				222F51D329ED29C6002C6896 /* SettingsViewController.swift */,
+				222F51E329EEACCF002C6896 /* Cell */,
+				222F51E229EEAC6C002C6896 /* Screen */,
 				222F51A029E935D7002C6896 /* ExpenseManagementApp */,
 				222F51B729E935D8002C6896 /* ExpenseManagementAppTests */,
 				222F51C129E935D8002C6896 /* ExpenseManagementAppUITests */,
@@ -108,10 +109,9 @@
 		222F51A029E935D7002C6896 /* ExpenseManagementApp */ = {
 			isa = PBXGroup;
 			children = (
-				222F51A129E935D7002C6896 /* AppDelegate.swift */,
-				222F51A329E935D7002C6896 /* SceneDelegate.swift */,
-				222F51A529E935D7002C6896 /* ViewController.swift */,
 				222F51A729E935D7002C6896 /* Main.storyboard */,
+				222F51A329E935D7002C6896 /* SceneDelegate.swift */,
+				222F51A129E935D7002C6896 /* AppDelegate.swift */,
 				222F51AA29E935D8002C6896 /* Assets.xcassets */,
 				222F51AC29E935D8002C6896 /* LaunchScreen.storyboard */,
 				222F51AF29E935D8002C6896 /* Info.plist */,
@@ -134,6 +134,25 @@
 				222F51C429E935D8002C6896 /* ExpenseManagementAppUITestsLaunchTests.swift */,
 			);
 			path = ExpenseManagementAppUITests;
+			sourceTree = "<group>";
+		};
+		222F51E229EEAC6C002C6896 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				222F51D329ED29C6002C6896 /* SettingsViewController.swift */,
+				222F51D129ECFB7B002C6896 /* ReportViewController.swift */,
+				222F51A529E935D7002C6896 /* ViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		222F51E329EEACCF002C6896 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				222F51DF29EE57F5002C6896 /* SettingsTableViewCell.swift */,
+				222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +290,7 @@
 				222F51A629E935D7002C6896 /* ViewController.swift in Sources */,
 				222F51A229E935D7002C6896 /* AppDelegate.swift in Sources */,
 				222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */,
+				222F51E029EE57F5002C6896 /* SettingsTableViewCell.swift in Sources */,
 				222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */,
 				222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */,
 			);

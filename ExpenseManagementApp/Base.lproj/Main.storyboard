@@ -106,7 +106,77 @@
             </objects>
             <point key="canvasLocation" x="544.61538461538464" y="-354.02843601895734"/>
         </scene>
-        <!--Home-->
+        <!--Add New View Controller-->
+        <scene sceneID="iRL-ch-x7h">
+            <objects>
+                <viewController storyboardIdentifier="AddNewViewController" id="Ujp-ck-cOm" customClass="AddNewViewController" customModule="ExpenseManagementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0yC-uT-ihh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HhE-N4-xKr">
+                                <rect key="frame" x="0.0" y="46" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Add new" id="KTz-le-y0z"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Expenses" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uXq-tP-vP0">
+                                <rect key="frame" x="31" y="134" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmE-0E-Bk2">
+                                <rect key="frame" x="334" y="155" width="12" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Grocery" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24e-Uj-i5D">
+                                <rect key="frame" x="31" y="209" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvu-Gf-V9l">
+                                <rect key="frame" x="31" y="284" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Description (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hT0-WH-7DX">
+                                <rect key="frame" x="31" y="356" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-z0-Gxm">
+                                <rect key="frame" x="46" y="202" width="106" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nXO-hC-gRN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="DescriptionTextField" destination="hT0-WH-7DX" id="JDu-gz-IEc"/>
+                        <outlet property="categoryNameTextField" destination="24e-Uj-i5D" id="fJL-P1-Nsk"/>
+                        <outlet property="expensesTextField" destination="uXq-tP-vP0" id="od0-ga-u7t"/>
+                        <outlet property="moneyExpensesTextField" destination="xvu-Gf-V9l" id="9t0-PD-oAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYJ-94-s80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409.23076923076923" y="1190.7582938388625"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Gq9-Lm-eOw">
             <objects>
                 <viewController id="J5i-28-1kX" customClass="ViewController" customModule="ExpenseManagementApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -426,7 +496,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ar-Id-Gov">
-                                <rect key="frame" x="130" y="715" width="130" height="48"/>
+                                <rect key="frame" x="130" y="712" width="130" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -441,12 +511,15 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addNewButton:" destination="J5i-28-1kX" eventType="touchUpInside" id="20I-SL-ABe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fzL-0H-Sr0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="fyK-pi-sIt"/>
+                    <navigationItem key="navigationItem" id="zwI-PB-DvQ"/>
                     <connections>
                         <outlet property="ExpensesTableOneContainer" destination="LB5-5D-3R1" id="gT1-OJ-aw4"/>
                         <outlet property="ExpensesTableTwoContainer" destination="7y6-oZ-yFb" id="4kY-m1-6CO"/>
@@ -457,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bt2-0W-Isw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544.61538461538464" y="494.78672985781986"/>
+            <point key="canvasLocation" x="1473.8461538461538" y="427.96208530805683"/>
         </scene>
         <!--Report-->
         <scene sceneID="FwO-QB-ktS">
@@ -643,7 +716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4J-SA-Vsl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404.6153846153845" y="52.606635071090047"/>
+            <point key="canvasLocation" x="2333.8461538461538" y="52.606635071090047"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZNK-SN-KM1">
@@ -657,13 +730,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="k88-2g-bli" kind="relationship" relationship="viewControllers" id="ytQ-WX-uen"/>
-                        <segue destination="J5i-28-1kX" kind="relationship" relationship="viewControllers" id="BNx-VS-jC1"/>
+                        <segue destination="cAJ-uI-QoR" kind="relationship" relationship="viewControllers" id="BNx-VS-jC1"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sOZ-cE-um7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gf-LT-L15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-248" y="53"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="VPs-n5-ZdJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAJ-uI-QoR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="fyK-pi-sIt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c4Z-JW-Bc0">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J5i-28-1kX" kind="relationship" relationship="rootViewController" id="MnB-Aw-qYx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h01-N4-wPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.61538461538464" y="427.96208530805683"/>
         </scene>
     </scenes>
     <resources>
@@ -684,6 +776,7 @@
         <image name="account_balance_black_24dp(1) 1" width="24" height="24"/>
         <image name="account_balance_wallet_black_24dp(1) 1" width="24" height="24"/>
         <image name="category_black_24dp 1" width="24" height="24"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="payments_black_24dp 1" width="24" height="24"/>

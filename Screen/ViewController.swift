@@ -13,35 +13,45 @@ class ViewController: UIViewController {
     @IBOutlet weak var addNewClick: UIButton!
     @IBOutlet weak var TotalSpendingContainer
     : UIView!
+    let datePicker = UIDatePicker()
+    let toolbar = UIToolbar()
     @IBOutlet weak var ExpensesTableOneContainer: UIView!
     @IBOutlet weak var ExpensesTableTwoContainer: UIView!
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        createDatePicker()
         applyShadowOnview(dateTF)
         applyShadowOnview(TotalSpendingContainer)
         applyShadowOnview(ExpensesTableOneContainer)
         applyShadowOnview(ExpensesTableTwoContainer)
         addNewClick.layer.cornerRadius = 20
-        let datePicker = UIDatePicker()
+    }
+    
+    
+    @IBAction func addNewButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AddNewViewController") as! AddNewViewController
+        self.navigationController?.pushViewController(vc,animated: true)
+        
+    }
+    func createDatePicker () {
+        toolbar.sizeToFit()
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
+        toolbar.setItems([doneBtn], animated: true)
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(dateChange(datePicker:)), for: UIControl.Event.valueChanged)
-        datePicker.frame.size = CGSize(width: 0, height: 300)
-        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.frame.size = CGSize(width: 300, height: 300)
+        datePicker.preferredDatePickerStyle = .inline
         datePicker.maximumDate = Date()
         dateTF.inputView = datePicker
-        dateTF.text = formatDate(date: Date()) // todays Date
-        
-        
-        
-        
-        
-        
+        dateTF.text = formatDate(date: Date()) // todays Date)
     }
     
     @objc func dateChange(datePicker: UIDatePicker)
     {
-        dateTF.text = formatDate(date: datePicker.date)
+        dateTF.text = "\(datePicker.date)"
+        self.view.endEditing(true)
     }
     
     func formatDate(date: Date) -> String

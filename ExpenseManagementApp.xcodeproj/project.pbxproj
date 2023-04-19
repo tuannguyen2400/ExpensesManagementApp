@@ -20,6 +20,8 @@
 		222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51D329ED29C6002C6896 /* SettingsViewController.swift */; };
 		222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */; };
 		222F51E029EE57F5002C6896 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51DF29EE57F5002C6896 /* SettingsTableViewCell.swift */; };
+		222F51E529EFA63F002C6896 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51E429EFA63F002C6896 /* AddNewViewController.swift */; };
+		222F51E729EFCA1B002C6896 /* DatePickerManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51E629EFCA1B002C6896 /* DatePickerManagement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		222F51D329ED29C6002C6896 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		222F51DD29ED555D002C6896 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		222F51DF29EE57F5002C6896 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		222F51E429EFA63F002C6896 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		222F51E629EFCA1B002C6896 /* DatePickerManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerManagement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		222F519529E935D7002C6896 = {
 			isa = PBXGroup;
 			children = (
+				222F51E629EFCA1B002C6896 /* DatePickerManagement.swift */,
 				222F51E329EEACCF002C6896 /* Cell */,
 				222F51E229EEAC6C002C6896 /* Screen */,
 				222F51A029E935D7002C6896 /* ExpenseManagementApp */,
@@ -139,6 +144,7 @@
 		222F51E229EEAC6C002C6896 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				222F51E429EFA63F002C6896 /* AddNewViewController.swift */,
 				222F51D329ED29C6002C6896 /* SettingsViewController.swift */,
 				222F51D129ECFB7B002C6896 /* ReportViewController.swift */,
 				222F51A529E935D7002C6896 /* ViewController.swift */,
@@ -293,6 +299,8 @@
 				222F51E029EE57F5002C6896 /* SettingsTableViewCell.swift in Sources */,
 				222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */,
 				222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */,
+				222F51E729EFCA1B002C6896 /* DatePickerManagement.swift in Sources */,
+				222F51E529EFA63F002C6896 /* AddNewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

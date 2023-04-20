@@ -133,6 +133,9 @@
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                <connections>
+                                    <action selector="showListComponents:" destination="Ujp-ck-cOm" eventType="touchUpInside" id="ZeE-TZ-k7L"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Grocery" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24e-Uj-i5D">
                                 <rect key="frame" x="31" y="209" width="328" height="48"/>
@@ -175,6 +178,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYJ-94-s80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-409.23076923076923" y="1190.7582938388625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yid-X1-Eag">
+            <objects>
+                <viewController id="Qkq-GE-bGx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AWZ-K4-kUY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M6K-ov-olb">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KeO-8y-ZeR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KeO-8y-ZeR" firstAttribute="bottom" secondItem="M6K-ov-olb" secondAttribute="bottom" id="C1V-tl-WP9"/>
+                            <constraint firstItem="M6K-ov-olb" firstAttribute="leading" secondItem="KeO-8y-ZeR" secondAttribute="leading" id="Ikh-Ne-L5x"/>
+                            <constraint firstItem="M6K-ov-olb" firstAttribute="top" secondItem="KeO-8y-ZeR" secondAttribute="top" id="aTD-er-VWm"/>
+                            <constraint firstItem="KeO-8y-ZeR" firstAttribute="trailing" secondItem="M6K-ov-olb" secondAttribute="trailing" id="xd0-rb-t53"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGN-sG-a6k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="1225"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gq9-Lm-eOw">

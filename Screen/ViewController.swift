@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     let toolbar = UIToolbar()
     @IBOutlet weak var ExpensesTableOneContainer: UIView!
     @IBOutlet weak var ExpensesTableTwoContainer: UIView!
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         createDatePicker()
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AddNewViewController") as! AddNewViewController
         self.navigationController?.pushViewController(vc,animated: true)
-        
     }
     func createDatePicker () {
         toolbar.sizeToFit()
@@ -47,7 +46,6 @@ class ViewController: UIViewController {
         dateTF.inputView = datePicker
         dateTF.text = formatDate(date: Date()) // todays Date)
     }
-    
     @objc func dateChange(datePicker: UIDatePicker)
     {
         dateTF.text = "\(datePicker.date)"

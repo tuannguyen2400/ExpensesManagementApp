@@ -27,8 +27,13 @@ class AddNewViewController: UIViewController {
     }
     
 
-
+    @IBAction func showListComponents(_ sender: UIButton) {
+        
+        
+    }
+    
 }
+
 func applyShadowOnAddNewview(_ view: UIView) {
     view.layer.cornerRadius = 8
     view.layer.shadowColor = UIColor.darkGray.cgColor

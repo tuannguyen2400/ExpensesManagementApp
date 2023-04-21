@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import FloatingPanel
 
-class AddNewViewController: UIViewController {
+class AddNewViewController: UIViewController,FloatingPanelControllerDelegate {
 
     @IBOutlet weak var expensesTextField: UITextField!
     @IBOutlet weak var categoryNameTextField: UITextField!
@@ -16,10 +17,12 @@ class AddNewViewController: UIViewController {
     
     @IBOutlet weak var DescriptionTextField: UITextField!
     
-    
+    let fpc = FloatingPanelController()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fpc.delegate = self
         applyShadowOnAddNewview(expensesTextField)
         applyShadowOnAddNewview(categoryNameTextField)
         applyShadowOnAddNewview(moneyExpensesTextField)
@@ -28,16 +31,19 @@ class AddNewViewController: UIViewController {
     
 
     @IBAction func showListComponents(_ sender: UIButton) {
-        
-        
+        let contentVC = storyboard?.instantiateViewController(identifier: "CategoryHalfScreen") as? CategoryHalfScreenViewController
+        fpc.set(contentViewController: contentVC)
+        fpc.addPanel(toParent: self)
+    }
     }
     
-}
+
 
 func applyShadowOnAddNewview(_ view: UIView) {
+    view.layer.borderColor = UIColor.darkGray.withAlphaComponent(0.3).cgColor
+    view.layer.borderWidth = 1
     view.layer.cornerRadius = 8
     view.layer.shadowColor = UIColor.darkGray.cgColor
-    view.layer.shadowOpacity = 0.5
     view.layer.shadowOffset = .zero
-    view.layer.shadowRadius = 2
+    view.clipsToBounds = true
 }

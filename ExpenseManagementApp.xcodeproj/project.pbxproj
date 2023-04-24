@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A6281B2BE8A9D095F646D09 /* Pods_ExpenseManagementApp_ExpenseManagementAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319B022D2B4DCC7791940738 /* Pods_ExpenseManagementApp_ExpenseManagementAppUITests.framework */; };
+		2228E49529F532EE00543199 /* AddAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228E49429F532EE00543199 /* AddAmountViewController.swift */; };
 		222F51A229E935D7002C6896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A129E935D7002C6896 /* AppDelegate.swift */; };
 		222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A329E935D7002C6896 /* SceneDelegate.swift */; };
 		222F51A629E935D7002C6896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A529E935D7002C6896 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1891B922A5851B70D1F356BD /* Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ExpenseManagementApp-ExpenseManagementAppUITests/Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2228E49429F532EE00543199 /* AddAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAmountViewController.swift; sourceTree = "<group>"; };
 		222F519E29E935D7002C6896 /* ExpenseManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222F51A129E935D7002C6896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222F51A329E935D7002C6896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				222F51D129ECFB7B002C6896 /* ReportViewController.swift */,
 				222F51A529E935D7002C6896 /* ViewController.swift */,
 				22D6ED4429F23B59002247B0 /* CategoryHalfScreenViewController.swift */,
+				2228E49429F532EE00543199 /* AddAmountViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2228E49529F532EE00543199 /* AddAmountViewController.swift in Sources */,
 				222F51D229ECFB7B002C6896 /* ReportViewController.swift in Sources */,
 				222F51A629E935D7002C6896 /* ViewController.swift in Sources */,
 				222F51A229E935D7002C6896 /* AppDelegate.swift in Sources */,

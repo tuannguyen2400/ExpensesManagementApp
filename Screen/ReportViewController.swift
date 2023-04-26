@@ -31,7 +31,6 @@ class ReportViewController: UIViewController {
         components(imageName: "Gifts", titleName:"Gifts"),
         components(imageName: "Electronics", titleName:"Electronics"),
         components(imageName: "Cafe", titleName:"Caffe & Bar"),
-        
     ]
 }
 func applyShadowOnReportView(_ view: UIView) {

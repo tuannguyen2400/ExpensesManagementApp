@@ -73,9 +73,8 @@ class CategoryHalfScreenViewController: UIViewController , UICollectionViewDataS
     @IBAction func ClickAddNewDetailsVC(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AddAmountViewController") as! AddAmountViewController
-        self.navigationController?.pushViewController(vc,
-         animated: true)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AddNewViewController") as! AddNewViewController
+        self.navigationController?.present(vc, animated: true)
     }
     
 }

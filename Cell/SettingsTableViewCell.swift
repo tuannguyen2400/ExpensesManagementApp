@@ -11,13 +11,12 @@ class SettingsTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var reportComponentsImg: UIImageView!
-    
     @IBOutlet weak var nameSettingsComponents: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+}
 
    
 

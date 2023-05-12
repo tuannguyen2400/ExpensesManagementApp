@@ -10,6 +10,5 @@ import UIKit
 class CategoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryImg: UIImageView!
-    
     @IBOutlet weak var nameCategory: UILabel!
 }

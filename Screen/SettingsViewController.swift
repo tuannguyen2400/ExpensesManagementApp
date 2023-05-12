@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
         let imageName : String
         let titleName : String
     }
+    
     let data: [settingsComponents] = [
         settingsComponents(imageName: "ManagementCategories", titleName:"Management categories"),
         settingsComponents(imageName: "pdf", titleName:"Export to PDF"),
@@ -21,23 +22,20 @@ class SettingsViewController: UIViewController {
         settingsComponents(imageName: "translate_black_24dp 1", titleName:"Choose lanaguage"),
         settingsComponents(imageName: "quiz_black_24dp 1", titleName:"Frequently asked questions"),
         settingsComponents(imageName: "logout_black_24dp 1", titleName:"Logout"),
-        
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         settingsTableView.dataSource = self
         settingsTableView.delegate = self
     }
-    
-    
-    
-    
-    
 }
+
 extension SettingsViewController : UITableViewDelegate ,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let settingscomponents = data[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell") as! SettingsTableViewCell
@@ -45,12 +43,14 @@ extension SettingsViewController : UITableViewDelegate ,UITableViewDataSource {
         cell.nameSettingsComponents.text = settingscomponents.titleName
         return cell
     }
+    
     //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     //
     //    }
     //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //        <#code#>
     //    }
+    
     func applyShadowOnReportView(_ view: UIView) {
         view.layer.cornerRadius = 8
         view.layer.shadowColor = UIColor.darkGray.cgColor

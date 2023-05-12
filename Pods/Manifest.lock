@@ -1,16 +1,22 @@
 PODS:
   - FloatingPanel (2.6.1)
+  - SQLite.swift (0.14.1):
+    - SQLite.swift/standard (= 0.14.1)
+  - SQLite.swift/standard (0.14.1)
 
 DEPENDENCIES:
   - FloatingPanel
+  - SQLite.swift
 
 SPEC REPOS:
   trunk:
     - FloatingPanel
+    - SQLite.swift
 
 SPEC CHECKSUMS:
   FloatingPanel: de6bb891912ede28da7b1140f7b583c474fec28a
+  SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
 
-PODFILE CHECKSUM: f60d63d94fdceed80a8eff125476ec6d68048b0a
+PODFILE CHECKSUM: ba8f59f02f91c8a47f30ee93aa7451987dbda87d
 
 COCOAPODS: 1.12.1

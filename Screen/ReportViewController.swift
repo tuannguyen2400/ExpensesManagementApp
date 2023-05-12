@@ -20,6 +20,13 @@ class ReportViewController: UIViewController {
         applyShadowOnReportView(reportCalendarOutlet)
     }
     
+    @IBAction func previouseMonth(_ sender: Any) {
+        
+    }
+    
+    @IBAction func nextMonth(_ sender: Any) {
+        
+    }
     struct components {
         let imageName : String
         let titleName : String
@@ -29,10 +36,11 @@ class ReportViewController: UIViewController {
         components(imageName: "Health", titleName:"Health"),
         components(imageName: "Groceries", titleName:"Personal"),
         components(imageName: "Gifts", titleName:"Gifts"),
-        components(imageName: "Electronics", titleName:"Electronics"),
+        components(imageName: "Electronics", titleName: "Electronics"),
         components(imageName: "Cafe", titleName:"Caffe & Bar"),
     ]
 }
+
 func applyShadowOnReportView(_ view: UIView) {
     view.layer.cornerRadius = 8
     view.layer.shadowColor = UIColor.darkGray.cgColor
@@ -40,6 +48,7 @@ func applyShadowOnReportView(_ view: UIView) {
     view.layer.shadowOffset = .zero
     view.layer.shadowRadius = 2
 }
+
 extension ReportViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.count
@@ -58,6 +67,7 @@ extension ReportViewController : UITableViewDelegate, UITableViewDataSource {
     //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //        <#code#>
     //    }
+    
     
     
     

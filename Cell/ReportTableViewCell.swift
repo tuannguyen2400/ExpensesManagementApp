@@ -14,6 +14,7 @@ class ReportTableViewCell: UITableViewCell {
     @IBOutlet weak var numberComponents: UILabel!
     @IBOutlet weak var componentImg: UIImageView!
     @IBOutlet weak var moneyExpensesLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

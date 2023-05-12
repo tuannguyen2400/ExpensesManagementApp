@@ -6,15 +6,18 @@
 //
 
 import UIKit
+import SQLite
+import SQLite3
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var dateTF: UITextField!
     @IBOutlet weak var addNewClick: UIButton!
-    @IBOutlet weak var TotalSpendingContainer
-    : UIView!
+    @IBOutlet weak var TotalSpendingContainer: UIView!
+    
     let datePicker = UIDatePicker()
     let toolbar = UIToolbar()
+    
     @IBOutlet weak var ExpensesTableOneContainer: UIView!
     @IBOutlet weak var ExpensesTableTwoContainer: UIView!
  
@@ -28,12 +31,12 @@ class ViewController: UIViewController {
         addNewClick.layer.cornerRadius = 20
     }
     
-    
     @IBAction func addNewButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AddNewViewController") as! AddNewViewController
         self.navigationController?.pushViewController(vc,animated: true)
     }
+    
     func createDatePicker () {
         toolbar.sizeToFit()
         let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
@@ -46,6 +49,7 @@ class ViewController: UIViewController {
         dateTF.inputView = datePicker
         dateTF.text = formatDate(date: Date()) // todays Date)
     }
+    
     @objc func dateChange(datePicker: UIDatePicker)
     {
         dateTF.text = "\(datePicker.date)"
@@ -55,7 +59,7 @@ class ViewController: UIViewController {
     func formatDate(date: Date) -> String
     {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM,yyyy"
+        formatter.dateFormat = "MMMM,yyyy"
         return formatter.string(from: date)
     }
     
@@ -66,8 +70,6 @@ class ViewController: UIViewController {
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 2
     }
-    
-    
-    
 }
+
 

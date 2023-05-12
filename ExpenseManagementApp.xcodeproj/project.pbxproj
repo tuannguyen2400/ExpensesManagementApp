@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A6281B2BE8A9D095F646D09 /* Pods_ExpenseManagementApp_ExpenseManagementAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319B022D2B4DCC7791940738 /* Pods_ExpenseManagementApp_ExpenseManagementAppUITests.framework */; };
+		2228E4972A0415EF00543199 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228E4962A0415EF00543199 /* Database.swift */; };
 		222F51A229E935D7002C6896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A129E935D7002C6896 /* AppDelegate.swift */; };
 		222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A329E935D7002C6896 /* SceneDelegate.swift */; };
 		222F51A629E935D7002C6896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F51A529E935D7002C6896 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1891B922A5851B70D1F356BD /* Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ExpenseManagementApp-ExpenseManagementAppUITests/Pods-ExpenseManagementApp-ExpenseManagementAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2228E4962A0415EF00543199 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Database.swift; path = Database/Database.swift; sourceTree = SOURCE_ROOT; };
 		222F519E29E935D7002C6896 /* ExpenseManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222F51A129E935D7002C6896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222F51A329E935D7002C6896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,9 +109,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2228E4982A04187400543199 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2228E4962A0415EF00543199 /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		222F519529E935D7002C6896 = {
 			isa = PBXGroup;
 			children = (
+				2228E4982A04187400543199 /* Database */,
 				222F51E629EFCA1B002C6896 /* DatePickerManagement.swift */,
 				222F51E329EEACCF002C6896 /* Cell */,
 				222F51E229EEAC6C002C6896 /* Screen */,
@@ -452,6 +463,7 @@
 				222F51DE29ED555D002C6896 /* ReportTableViewCell.swift in Sources */,
 				222F51E029EE57F5002C6896 /* SettingsTableViewCell.swift in Sources */,
 				222F51D429ED29C6002C6896 /* SettingsViewController.swift in Sources */,
+				2228E4972A0415EF00543199 /* Database.swift in Sources */,
 				222F51A429E935D7002C6896 /* SceneDelegate.swift in Sources */,
 				22D6ED4529F23B59002247B0 /* CategoryHalfScreenViewController.swift in Sources */,
 				22D6ED4929F248F5002247B0 /* CategoryCollectionViewCell.swift in Sources */,

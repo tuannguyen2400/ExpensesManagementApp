@@ -22,10 +22,11 @@ class CategoryHalfScreenViewController: UIViewController , UICollectionViewDataS
         categoriesComponents(imageName: "Laundry", titleName:"Laundry"),
         categoriesComponents(imageName: "Liquor", titleName:"Liquor"),
         categoriesComponents(imageName: "Restaurant", titleName:"Restaurant"),
-        
     ]
+    
     @IBOutlet weak var addAmountBtnOutlet: UIButton!
     @IBOutlet weak var  categoryCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryCollectionView.register(UICollectionViewCell.self , forCellWithReuseIdentifier: "CategoryCell")
@@ -49,9 +50,9 @@ class CategoryHalfScreenViewController: UIViewController , UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let categoryLogoWidth = UIScreen.main.bounds.width
         let cellWidth = (categoryLogoWidth - 3) / 3
-        
         return CGSize(width: cellWidth , height: cellWidth)
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let namecategory = data[indexPath.row]
         let sb = UIStoryboard(name: "Main", bundle: nil)
@@ -62,22 +63,20 @@ class CategoryHalfScreenViewController: UIViewController , UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1   }
+        return 1
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
-        
-        
     }
     
     @IBAction func ClickAddNewDetailsVC(_ sender: Any) {
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AddNewViewController") as! AddNewViewController
         self.navigationController?.present(vc, animated: true)
     }
-    
 }
+
 func applyShadowOnCategoryHalfview(_ view: UIView) {
     view.layer.borderColor = UIColor.darkGray.withAlphaComponent(0.3).cgColor
     view.layer.borderWidth = 1
